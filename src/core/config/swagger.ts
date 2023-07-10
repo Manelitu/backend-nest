@@ -16,6 +16,8 @@ export function configSwagger({ app, config }: ConfigSwaggerParams) {
       name: 'X-API-KEY',
     })
     .setTitle('Nest service')
+    .setDescription('Service made to evaluate a knowledge test in NestJS')
+    .setVersion('1.0')
     .build();
 
   const document = SwaggerModule.createDocument(app, documentBuild);
